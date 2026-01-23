@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details - Serenify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                <i class="bi bi-flower1 fs-3 text-primary-soft"></i>
+                <span class="fw-bold text-dark">Serenify</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link fw-medium" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-medium" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <button class="btn btn-link nav-link p-0 text-dark" id="theme-toggle"><i
+                            class="bi bi-moon-fill fs-5"></i></button>
+                    <a href="login.html" class="btn btn-outline-primary px-4">Log In</a>
+                    <a href="register.html" class="btn btn-primary px-4">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="d-flex align-items-center justify-content-center text-center bg-primary-soft"
+        style="min-height: 300px; padding-top: 80px;">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3 animate-up">Guided Meditation</h1>
+            <p class="lead text-dark opacity-75 animate-up" style="animation-delay: 0.1s;">Find deep relaxation and
+                focus in minutes.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-8 animate-up">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2000&auto=format&fit=crop"
+                        class="img-fluid rounded-4 mb-5 shadow-sm" alt="Meditation Details">
+
+                    <h3 class="fw-bold mb-4">Overview</h3>
+                    <p class="text-muted mb-4">Our guided meditations are crafted by leading experts to help you
+                        navigate life's challenges. Whether you're dealing with stress, anxiety, or simply want to
+                        improve your focus, we have a session for you. Each track is designed to be accessible for
+                        beginners while offering depth for experienced practitioners.</p>
+
+                    <h4 class="fw-bold mb-3">Key Benefits</h4>
+                    <ul class="list-unstyled text-muted mb-5">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Reduced stress and
+                            cortisol levels</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Improved focus and
+                            concentration</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Better emotional
+                            regulation</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Enhanced sleep
+                            quality</li>
+                    </ul>
+
+                    <h4 class="fw-bold mb-4">Frequently Asked Questions</h4>
+                    <div class="accordion accordion-flush" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-medium" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Do I need prior experience?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">Not at all! Our sessions are beginner-friendly
+                                    and include clear instructions.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-medium" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How long are the sessions?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">Sessions range from 3 minutes to 45 minutes, so
+                                    you can fit them into any schedule.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-medium" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can I download them offline?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">Yes, Premium members can download unlimited
+                                    sessions for offline listening.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 animate-up" style="animation-delay: 0.1s;">
+                    <div class="card border-0 bg-light p-4 rounded-4 sticky-top" style="top: 100px;">
+                        <h4 class="fw-bold mb-3">Get Started</h4>
+                        <p class="text-muted mb-4">Unlock this service and more with our Premium plan.</p>
+                        <h2 class="fw-bold mb-3">$12<span class="fs-6 fw-normal text-muted">/mo</span></h2>
+                        <a href="register.html" class="btn btn-primary w-100 py-2 mb-3">Start Free Trial</a>
+                        <p class="small text-muted text-center mb-0">Cancel anytime. 7-day free trial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white pt-5 pb-4 border-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start text-muted small">
+                    &copy; 2026 Serenify. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-muted small text-decoration-none me-3">Privacy</a>
+                    <a href="#" class="text-muted small text-decoration-none">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
