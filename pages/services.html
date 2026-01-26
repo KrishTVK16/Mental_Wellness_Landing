@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Serenify</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link id="bootstrap-css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -26,14 +26,18 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link fw-medium" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="../explore.html">Discover</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link active fw-medium" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="contact.html">Contact</a></li>
                 </ul>
                 <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <button class="btn btn-link nav-link p-0 text-dark" id="rtl-toggle" aria-label="Toggle RTL"><i
+                            class="bi bi-text-right fs-5"></i></button>
                     <button class="btn btn-link nav-link p-0 text-dark" id="theme-toggle"><i
                             class="bi bi-moon-fill fs-5"></i></button>
+                    <a href="../dashboard/index.html" class="btn btn-outline-dark px-4">Dashboard</a>
                     <a href="login.html" class="btn btn-outline-primary px-4">Log In</a>
                     <a href="register.html" class="btn btn-primary px-4">Sign Up</a>
                 </div>
@@ -51,82 +55,397 @@
         </div>
     </section>
 
-    <!-- Services Grid -->
+    <!-- Services Catalog -->
+    <section class="py-5" style="background-color: var(--bg-light);">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-2">Choose your support</h2>
+                    <p class="text-muted mb-0">A calm toolkit you can mix and match based on your goals.</p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
+                <span class="badge bg-white border text-dark px-3 py-2 rounded-pill">Stress</span>
+                <span class="badge bg-white border text-dark px-3 py-2 rounded-pill">Sleep</span>
+                <span class="badge bg-white border text-dark px-3 py-2 rounded-pill">Focus</span>
+                <span class="badge bg-white border text-dark px-3 py-2 rounded-pill">Coaching</span>
+                <span class="badge bg-white border text-dark px-3 py-2 rounded-pill">CBT</span>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6 animate-up">
+                    <div class="bg-white border rounded-4 p-4 p-lg-5 h-100">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="bg-primary-soft text-primary-soft rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 54px; height: 54px;">
+                                <i class="bi bi-lungs fs-4"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="fw-bold mb-2">Guided Meditation</h4>
+                                <p class="text-muted mb-3">Short sessions that build calm, focus, and emotional balance.
+                                </p>
+                                <div class="d-flex flex-column gap-2 text-muted small mb-4">
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Beginner to
+                                        advanced</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Anxiety,
+                                        focus, confidence</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> 2–15 minute
+                                        formats</div>
+                                </div>
+                                <a href="service-details.html" class="btn btn-outline-dark px-4">View details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate-up" style="animation-delay: 0.05s;">
+                    <div class="bg-white border rounded-4 p-4 p-lg-5 h-100">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="bg-warning-subtle text-warning rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 54px; height: 54px;">
+                                <i class="bi bi-moon-stars fs-4"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="fw-bold mb-2">Sleep Stories</h4>
+                                <p class="text-muted mb-3">Soothing stories and soundscapes designed for deeper rest.</p>
+                                <div class="d-flex flex-column gap-2 text-muted small mb-4">
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Wind-down
+                                        routines</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Sleep
+                                        hygiene guides</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Noise, rain,
+                                        ambient mixes</div>
+                                </div>
+                                <a href="service-details.html" class="btn btn-outline-dark px-4">View details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate-up" style="animation-delay: 0.1s;">
+                    <div class="bg-white border rounded-4 p-4 p-lg-5 h-100">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 54px; height: 54px;">
+                                <i class="bi bi-journal-richtext fs-4"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="fw-bold mb-2">Mood Tracking</h4>
+                                <p class="text-muted mb-3">Understand your patterns and improve your routines with
+                                    clarity.</p>
+                                <div class="d-flex flex-column gap-2 text-muted small mb-4">
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Daily
+                                        check-ins</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Trends over
+                                        time</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Gentle
+                                        reminders</div>
+                                </div>
+                                <a href="service-details.html" class="btn btn-outline-dark px-4">View details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate-up" style="animation-delay: 0.15s;">
+                    <div class="bg-white border rounded-4 p-4 p-lg-5 h-100">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="bg-info-subtle text-info rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 54px; height: 54px;">
+                                <i class="bi bi-people fs-4"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="fw-bold mb-2">1-on-1 Coaching</h4>
+                                <p class="text-muted mb-3">Work with a certified coach for personalized support and
+                                    accountability.</p>
+                                <div class="d-flex flex-column gap-2 text-muted small mb-4">
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Personalized
+                                        plan</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Practical
+                                        coping tools</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Weekly
+                                        sessions</div>
+                                </div>
+                                <a href="service-details.html" class="btn btn-outline-dark px-4">View details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate-up">
+                    <div class="bg-white border rounded-4 p-4 p-lg-5 h-100">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="bg-danger-subtle text-danger rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 54px; height: 54px;">
+                                <i class="bi bi-heart-pulse fs-4"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="fw-bold mb-2">Stress Management</h4>
+                                <p class="text-muted mb-3">Targeted exercises for acute stress—designed for the moment
+                                    you need relief.</p>
+                                <div class="d-flex flex-column gap-2 text-muted small mb-4">
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Grounding
+                                        techniques</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Breathwork
+                                        sequences</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Quick
+                                        calming plans</div>
+                                </div>
+                                <a href="service-details.html" class="btn btn-outline-dark px-4">View details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate-up" style="animation-delay: 0.05s;">
+                    <div class="bg-white border rounded-4 p-4 p-lg-5 h-100">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="bg-primary-soft text-primary-soft rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 54px; height: 54px;">
+                                <i class="bi bi-book fs-4"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="fw-bold mb-2">CBT Tools</h4>
+                                <p class="text-muted mb-3">Structured prompts to challenge negative thoughts and build
+                                    resilience.</p>
+                                <div class="d-flex flex-column gap-2 text-muted small mb-4">
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Thought
+                                        reframing</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Practical
+                                        worksheets</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Habit
+                                        builders</div>
+                                </div>
+                                <a href="service-details.html" class="btn btn-outline-dark px-4">View details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="py-5 bg-white">
         <div class="container py-5">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8 animate-up">
+                    <h2 class="fw-bold mb-2">Not sure where to start?</h2>
+                    <p class="text-muted mb-0">Try a quick check-in and we’ll suggest a simple plan.</p>
+                </div>
+                <div class="col-lg-4 animate-up" style="animation-delay: 0.1s;">
+                    <a href="../explore.html" class="btn btn-primary w-100 py-3">Go to Discover</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: var(--bg-light);">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-2">How our services help</h2>
+                    <p class="text-muted mb-0">A simple approach designed for real schedules and real stress.</p>
+                </div>
+            </div>
+
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4 animate-up">
-                    <div class="card h-100 border-0 shadow-sm p-4 hover-lift">
-                        <div
-                            class="icon-square bg-primary-soft text-primary-soft p-3 rounded-circle d-inline-block mb-3">
-                            <i class="bi bi-lungs fs-3"></i>
+                <div class="col-md-4 animate-up">
+                    <div class="p-4 bg-white border rounded-4 h-100">
+                        <div class="bg-primary-soft text-primary-soft rounded-circle d-flex align-items-center justify-content-center mb-3"
+                            style="width: 52px; height: 52px;">
+                            <i class="bi bi-emoji-smile fs-4"></i>
                         </div>
-                        <h4 class="fw-bold mb-3">Guided Meditation</h4>
-                        <p class="text-muted">Access over 500 guided meditations for anxiety, sleep, focus, and more.
-                            Led by world-renowned experts.</p>
-                        <a href="service-details.html" class="text-primary text-decoration-none fw-medium mt-auto">Learn
-                            More <i class="bi bi-arrow-right"></i></a>
+                        <h5 class="fw-bold mb-2">Check in</h5>
+                        <p class="text-muted mb-0">Tell us your mood and energy level to get a relevant suggestion.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 animate-up" style="animation-delay: 0.1s;">
-                    <div class="card h-100 border-0 shadow-sm p-4 hover-lift">
-                        <div class="icon-square bg-success-subtle text-success p-3 rounded-circle d-inline-block mb-3">
-                            <i class="bi bi-journal-richtext fs-3"></i>
+                <div class="col-md-4 animate-up" style="animation-delay: 0.1s;">
+                    <div class="p-4 bg-white border rounded-4 h-100">
+                        <div class="bg-warning-subtle text-warning rounded-circle d-flex align-items-center justify-content-center mb-3"
+                            style="width: 52px; height: 52px;">
+                            <i class="bi bi-lightning-charge fs-4"></i>
                         </div>
-                        <h4 class="fw-bold mb-3">Mood Tracking</h4>
-                        <p class="text-muted">Understand your emotional patterns with our intelligent mood tracker.
-                            Visualize your progress over time.</p>
-                        <a href="service-details.html" class="text-primary text-decoration-none fw-medium mt-auto">Learn
-                            More <i class="bi bi-arrow-right"></i></a>
+                        <h5 class="fw-bold mb-2">Practice</h5>
+                        <p class="text-muted mb-0">Choose a session—breathing, meditation, journaling, or sleep prep.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 animate-up" style="animation-delay: 0.2s;">
-                    <div class="card h-100 border-0 shadow-sm p-4 hover-lift">
-                        <div class="icon-square bg-warning-subtle text-warning p-3 rounded-circle d-inline-block mb-3">
-                            <i class="bi bi-moon-stars fs-3"></i>
+                <div class="col-md-4 animate-up" style="animation-delay: 0.2s;">
+                    <div class="p-4 bg-white border rounded-4 h-100">
+                        <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center mb-3"
+                            style="width: 52px; height: 52px;">
+                            <i class="bi bi-graph-up fs-4"></i>
                         </div>
-                        <h4 class="fw-bold mb-3">Sleep Stories</h4>
-                        <p class="text-muted">Fall asleep faster with our collection of bedtime stories and soundscapes
-                            designed to relax your mind.</p>
-                        <a href="service-details.html" class="text-primary text-decoration-none fw-medium mt-auto">Learn
-                            More <i class="bi bi-arrow-right"></i></a>
+                        <h5 class="fw-bold mb-2">Grow</h5>
+                        <p class="text-muted mb-0">Build consistency with reminders, streaks, and gentle progress.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 animate-up">
-                    <div class="card h-100 border-0 shadow-sm p-4 hover-lift">
-                        <div class="icon-square bg-info-subtle text-info p-3 rounded-circle d-inline-block mb-3">
-                            <i class="bi bi-people fs-3"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7 animate-up">
+                    <h2 class="fw-bold mb-2">Plans & pricing highlights</h2>
+                    <p class="text-muted mb-4">Start free and upgrade only when you’re ready for deeper guidance and
+                        structured programs.</p>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-4 border rounded-4 h-100">
+                                <div class="fw-bold mb-1">Free</div>
+                                <div class="text-muted small mb-3">For getting started</div>
+                                <div class="text-muted small d-flex flex-column gap-2">
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Daily
+                                        check-ins</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Starter
+                                        sessions</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Basic
+                                        reminders</div>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="fw-bold mb-3">1-on-1 Coaching</h4>
-                        <p class="text-muted">Connect with certified wellness coaches for personalized guidance and
-                            support on your journey.</p>
-                        <a href="service-details.html" class="text-primary text-decoration-none fw-medium mt-auto">Learn
-                            More <i class="bi bi-arrow-right"></i></a>
+                        <div class="col-md-6">
+                            <div class="p-4 border rounded-4 h-100">
+                                <div class="fw-bold mb-1">Premium</div>
+                                <div class="text-muted small mb-3">For deeper routines</div>
+                                <div class="text-muted small d-flex flex-column gap-2">
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Full
+                                        library</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Sleep
+                                        programs</div>
+                                    <div class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Personalized
+                                        plans</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 animate-up">
-                    <div class="card h-100 border-0 shadow-sm p-4 hover-lift">
-                        <div class="icon-square bg-danger-subtle text-danger p-3 rounded-circle d-inline-block mb-3">
-                            <i class="bi bi-heart-pulse fs-3"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">Stress Management</h4>
-                        <p class="text-muted">Targeted exercises to reduce acute stress in the moment, using breathing
-                            and grounding techniques.</p>
-                        <a href="service-details.html" class="text-primary text-decoration-none fw-medium mt-auto">Learn
-                            More <i class="bi bi-arrow-right"></i></a>
+
+                <div class="col-lg-5 animate-up" style="animation-delay: 0.1s;">
+                    <div class="glass-card p-4 p-lg-5 border-0 shadow-sm">
+                        <h4 class="fw-bold mb-2">Want full pricing?</h4>
+                        <p class="text-muted mb-4">See what’s included and pick a plan that fits you.</p>
+                        <a href="pricing.html" class="btn btn-primary w-100 py-3">View pricing</a>
+                        <a href="contact.html" class="btn btn-outline-dark w-100 py-3 mt-3">Contact sales</a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 animate-up">
-                    <div class="card h-100 border-0 shadow-sm p-4 hover-lift">
-                        <div
-                            class="icon-square bg-primary-soft text-primary-soft p-3 rounded-circle d-inline-block mb-3">
-                            <i class="bi bi-book fs-3"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: var(--bg-light);">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-2">Service FAQ</h2>
+                    <p class="text-muted mb-0">Quick answers about sessions, coaching, and privacy.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="accordion" id="servicesFaq">
+                        <div class="accordion-item border rounded-4 overflow-hidden mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-medium" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#servicesFaqOne">
+                                    How long are the sessions?
+                                </button>
+                            </h2>
+                            <div id="servicesFaqOne" class="accordion-collapse collapse show" data-bs-parent="#servicesFaq">
+                                <div class="accordion-body text-muted">Most sessions are 2–10 minutes. You can also find
+                                    longer routines when you have extra time.</div>
+                            </div>
                         </div>
-                        <h4 class="fw-bold mb-3">CBT Tools</h4>
-                        <p class="text-muted">Learn cognitive behavioral therapy techniques to challenge negative
-                            thoughts and build resilience.</p>
-                        <a href="service-details.html" class="text-primary text-decoration-none fw-medium mt-auto">Learn
-                            More <i class="bi bi-arrow-right"></i></a>
+                        <div class="accordion-item border rounded-4 overflow-hidden mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#servicesFaqTwo">
+                                    Do I need experience with meditation?
+                                </button>
+                            </h2>
+                            <div id="servicesFaqTwo" class="accordion-collapse collapse" data-bs-parent="#servicesFaq">
+                                <div class="accordion-body text-muted">No—everything is guided and beginner-friendly.
+                                    Start small and build up at your own pace.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#servicesFaqThree">
+                                    Is coaching therapy?
+                                </button>
+                            </h2>
+                            <div id="servicesFaqThree" class="accordion-collapse collapse" data-bs-parent="#servicesFaq">
+                                <div class="accordion-body text-muted">Coaching is not a replacement for therapy. It’s
+                                    practical support, habit-building, and accountability.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">What people say</h2>
+                <p class="text-muted">Real experiences from users building calmer routines.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 animate-up">
+                    <div class="card border-0 bg-light p-4 h-100">
+                        <div class="mb-3 text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="fst-italic mb-4">"The short breathing sessions help me reset between meetings. It’s
+                            simple and effective."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" class="rounded-circle" width="50" alt="">
+                            <div>
+                                <h6 class="fw-bold mb-0">Arjun Mehta</h6>
+                                <small class="text-muted">Product Manager</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 animate-up" style="animation-delay: 0.1s;">
+                    <div class="card border-0 bg-light p-4 h-100">
+                        <div class="mb-3 text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="fst-italic mb-4">"The sleep routines are the first thing that consistently helped me
+                            fall asleep faster."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://randomuser.me/api/portraits/women/28.jpg" class="rounded-circle" width="50" alt="">
+                            <div>
+                                <h6 class="fw-bold mb-0">Neha Kapoor</h6>
+                                <small class="text-muted">Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 animate-up" style="animation-delay: 0.2s;">
+                    <div class="card border-0 bg-light p-4 h-100">
+                        <div class="mb-3 text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="fst-italic mb-4">"The CBT tools make it easier to spot negative thoughts and reframe
+                            them. Great for daily use."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://randomuser.me/api/portraits/women/61.jpg" class="rounded-circle" width="50" alt="">
+                            <div>
+                                <h6 class="fw-bold mb-0">Aisha Khan</h6>
+                                <small class="text-muted">Designer</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,16 +455,72 @@
     <!-- Footer -->
     <footer class="bg-white pt-5 pb-4 border-top">
         <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center gap-2 mb-4" href="#">
+                        <i class="bi bi-flower1 fs-3 text-primary-soft"></i>
+                        <span class="fw-bold text-dark fs-4">Serenify</span>
+                    </a>
+                    <p class="text-muted mb-4">Empowering you to find calm in chaos. Your safe space for mental clarity
+                        and emotional growth.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3">Company</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">About Us</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Careers</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Blog</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3">Product</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Features</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Pricing</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-decoration-none text-muted hover-primary">Testimonials</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Get in Touch</h5>
+                    <ul class="list-unstyled text-muted mb-4">
+                        <li class="mb-2 d-flex gap-2"><i class="bi bi-geo-alt mt-1"></i> 123 Wellness Ave, Serenity
+                            City, SC 90210</li>
+                        <li class="mb-2 d-flex gap-2"><i class="bi bi-envelope mt-1"></i> hello@serenify.com</li>
+                        <li class="mb-2 d-flex gap-2"><i class="bi bi-telephone mt-1"></i> +1 (555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start text-muted small">
                     &copy; 2026 Serenify. All rights reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="text-muted small text-decoration-none me-3">Privacy</a>
-                    <a href="#" class="text-muted small text-decoration-none">Terms</a>
+                    <a href="#" class="text-muted small text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted small text-decoration-none">Terms of Service</a>
                 </div>
             </div>
         </div>
+
+        <!-- Back to Top -->
+        <a href="#" id="back-to-top" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 d-none z-3"
+            style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <i class="bi bi-arrow-up"></i>
+        </a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

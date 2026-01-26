@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Serenify</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link id="bootstrap-css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -26,14 +26,18 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link fw-medium" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="../explore.html">Discover</a></li>
                     <li class="nav-item"><a class="nav-link active fw-medium" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="contact.html">Contact</a></li>
                 </ul>
                 <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <button class="btn btn-link nav-link p-0 text-dark" id="rtl-toggle" aria-label="Toggle RTL"><i
+                            class="bi bi-text-right fs-5"></i></button>
                     <button class="btn btn-link nav-link p-0 text-dark" id="theme-toggle"><i
                             class="bi bi-moon-fill fs-5"></i></button>
+                    <a href="../dashboard/index.html" class="btn btn-outline-dark px-4">Dashboard</a>
                     <a href="login.html" class="btn btn-outline-primary px-4">Log In</a>
                     <a href="register.html" class="btn btn-primary px-4">Sign Up</a>
                 </div>
@@ -111,19 +115,221 @@
         </div>
     </section>
 
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-2">Our values</h2>
+                    <p class="text-muted mb-0">The principles that guide every feature we build.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 animate-up">
+                    <div class="p-4 border rounded-4 h-100">
+                        <div class="bg-primary-soft text-primary-soft rounded-circle d-flex align-items-center justify-content-center mb-3"
+                            style="width: 52px; height: 52px;">
+                            <i class="bi bi-heart-pulse fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Care first</h5>
+                        <p class="text-muted mb-0">We design with empathy and respect for your mental space.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-up" style="animation-delay: 0.05s;">
+                    <div class="p-4 border rounded-4 h-100">
+                        <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center mb-3"
+                            style="width: 52px; height: 52px;">
+                            <i class="bi bi-shield-check fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Privacy</h5>
+                        <p class="text-muted mb-0">Your check-ins and journals stay personal and protected.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-up" style="animation-delay: 0.1s;">
+                    <div class="p-4 border rounded-4 h-100">
+                        <div class="bg-warning-subtle text-warning rounded-circle d-flex align-items-center justify-content-center mb-3"
+                            style="width: 52px; height: 52px;">
+                            <i class="bi bi-lightbulb fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Clarity</h5>
+                        <p class="text-muted mb-0">Simple tools, clear steps, and support that never overwhelms.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-up" style="animation-delay: 0.15s;">
+                    <div class="p-4 border rounded-4 h-100">
+                        <div class="bg-info-subtle text-info rounded-circle d-flex align-items-center justify-content-center mb-3"
+                            style="width: 52px; height: 52px;">
+                            <i class="bi bi-graph-up fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Progress</h5>
+                        <p class="text-muted mb-0">Small habits, consistent practice, long-term change.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: var(--bg-light);">
+        <div class="container py-5">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6 animate-up">
+                    <h2 class="fw-bold mb-3">How Serenify works</h2>
+                    <p class="text-muted mb-4">We combine evidence-based methods with a gentle experience that fits
+                        daily life.</p>
+                    <div class="d-flex flex-column gap-3">
+                        <div class="d-flex gap-3 align-items-start p-4 bg-white border rounded-4">
+                            <i class="bi bi-emoji-smile fs-4 text-primary-soft"></i>
+                            <div>
+                                <div class="fw-bold">Daily check-ins</div>
+                                <div class="text-muted">Understand patterns and reflect without judgment.</div>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-start p-4 bg-white border rounded-4">
+                            <i class="bi bi-wind fs-4 text-primary-soft"></i>
+                            <div>
+                                <div class="fw-bold">Guided practices</div>
+                                <div class="text-muted">Breathing, meditation, and grounding tools.</div>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-start p-4 bg-white border rounded-4">
+                            <i class="bi bi-journal fs-4 text-primary-soft"></i>
+                            <div>
+                                <div class="fw-bold">Journaling prompts</div>
+                                <div class="text-muted">Reduce overthinking and build emotional clarity.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate-up" style="animation-delay: 0.1s;">
+                    <div class="glass-card p-4 p-lg-5 border-0 shadow-sm">
+                        <h4 class="fw-bold mb-2">A calmer week starts with one step</h4>
+                        <p class="text-muted mb-4">Pick a routine that matches your time and energy.</p>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <a href="services.html" class="btn btn-primary w-100 py-3">Explore our tools</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="register.html" class="btn btn-outline-dark w-100 py-3">Create free account</a>
+                            </div>
+                        </div>
+                        <div class="text-muted small mt-3">No credit card required.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7 animate-up">
+                    <h2 class="fw-bold mb-3">Our impact</h2>
+                    <p class="text-muted mb-4">We’re building a calmer internet—one person at a time. From students to
+                        professionals, Serenify supports healthier routines across life stages.</p>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="p-4 border rounded-4 h-100">
+                                <div class="text-muted small mb-1">Guided sessions</div>
+                                <div class="fw-bold fs-4">500+</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-4 border rounded-4 h-100">
+                                <div class="text-muted small mb-1">Countries</div>
+                                <div class="fw-bold fs-4">90+</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-4 border rounded-4 h-100">
+                                <div class="text-muted small mb-1">Daily check-ins</div>
+                                <div class="fw-bold fs-4">1M+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 animate-up" style="animation-delay: 0.1s;">
+                    <div class="bg-primary-soft p-4 p-lg-5 rounded-4">
+                        <h4 class="fw-bold mb-2">Want to work with us?</h4>
+                        <p class="text-dark opacity-75 mb-4">We collaborate with coaches, creators, and wellness
+                            communities.</p>
+                        <a href="contact.html" class="btn btn-outline-dark w-100 py-3">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-white pt-5 pb-4 border-top">
         <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center gap-2 mb-4" href="#">
+                        <i class="bi bi-flower1 fs-3 text-primary-soft"></i>
+                        <span class="fw-bold text-dark fs-4">Serenify</span>
+                    </a>
+                    <p class="text-muted mb-4">Empowering you to find calm in chaos. Your safe space for mental clarity
+                        and emotional growth.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3">Company</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">About Us</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Careers</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Blog</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3">Product</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Features</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Pricing</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-decoration-none text-muted hover-primary">Testimonials</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Get in Touch</h5>
+                    <ul class="list-unstyled text-muted mb-4">
+                        <li class="mb-2 d-flex gap-2"><i class="bi bi-geo-alt mt-1"></i> 123 Wellness Ave, Serenity
+                            City, SC 90210</li>
+                        <li class="mb-2 d-flex gap-2"><i class="bi bi-envelope mt-1"></i> hello@serenify.com</li>
+                        <li class="mb-2 d-flex gap-2"><i class="bi bi-telephone mt-1"></i> +1 (555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start text-muted small">
                     &copy; 2026 Serenify. All rights reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="text-muted small text-decoration-none me-3">Privacy</a>
-                    <a href="#" class="text-muted small text-decoration-none">Terms</a>
+                    <a href="#" class="text-muted small text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted small text-decoration-none">Terms of Service</a>
                 </div>
             </div>
         </div>
+
+        <!-- Back to Top -->
+        <a href="#" id="back-to-top" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 d-none z-3"
+            style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <i class="bi bi-arrow-up"></i>
+        </a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

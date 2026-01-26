@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Serenify</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link id="bootstrap-css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -26,14 +26,18 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link fw-medium" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="../explore.html">Discover</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link fw-medium" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link active fw-medium" href="contact.html">Contact</a></li>
                 </ul>
                 <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <button class="btn btn-link nav-link p-0 text-dark" id="rtl-toggle" aria-label="Toggle RTL"><i
+                            class="bi bi-text-right fs-5"></i></button>
                     <button class="btn btn-link nav-link p-0 text-dark" id="theme-toggle"><i
                             class="bi bi-moon-fill fs-5"></i></button>
+                    <a href="../dashboard/index.html" class="btn btn-outline-dark px-4">Dashboard</a>
                     <a href="login.html" class="btn btn-outline-primary px-4">Log In</a>
                     <a href="register.html" class="btn btn-primary px-4">Sign Up</a>
                 </div>
@@ -133,6 +137,110 @@
         </div>
     </section>
 
+    <section class="py-5" style="background-color: var(--bg-light);">
+        <div class="container py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6 animate-up">
+                    <h2 class="fw-bold mb-3">Support hours & response times</h2>
+                    <p class="text-muted mb-4">We reply as quickly as possible. For general questions, you’ll usually
+                        hear back within one business day.</p>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="p-4 bg-white border rounded-4 h-100">
+                                <div class="text-muted small mb-1">Support hours</div>
+                                <div class="fw-bold">Mon–Fri</div>
+                                <div class="text-muted small">9:00am – 5:00pm</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-4 bg-white border rounded-4 h-100">
+                                <div class="text-muted small mb-1">Typical response</div>
+                                <div class="fw-bold">6–24 hrs</div>
+                                <div class="text-muted small">Business days</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="p-4 bg-white border rounded-4">
+                                <div class="fw-bold mb-1">Best way to reach us</div>
+                                <div class="text-muted">Use the form for support requests (include screenshots if
+                                    possible), or email <span class="fw-medium">support@serenify.com</span>.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate-up" style="animation-delay: 0.1s;">
+                    <div class="glass-card p-4 p-lg-5 border-0 shadow-sm">
+                        <h4 class="fw-bold mb-2">Need help choosing a plan?</h4>
+                        <p class="text-muted mb-4">We can recommend the best starting point based on your goals.</p>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <a href="services.html" class="btn btn-primary w-100 py-3">Explore services</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="pricing.html" class="btn btn-outline-dark w-100 py-3">View pricing</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-2">Frequently asked questions</h2>
+                    <p class="text-muted mb-0">Quick answers before you send a message.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="accordion" id="contactFaq">
+                        <div class="accordion-item border rounded-4 overflow-hidden mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-medium" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#contactFaqOne">
+                                    I forgot my password. What should I do?
+                                </button>
+                            </h2>
+                            <div id="contactFaqOne" class="accordion-collapse collapse show" data-bs-parent="#contactFaq">
+                                <div class="accordion-body text-muted">Use the login page to reset your password. If you
+                                    don’t receive an email, contact support.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border rounded-4 overflow-hidden mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#contactFaqTwo">
+                                    Can I cancel anytime?
+                                </button>
+                            </h2>
+                            <div id="contactFaqTwo" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                                <div class="accordion-body text-muted">Yes. You can cancel your plan anytime from your
+                                    account settings.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#contactFaqThree">
+                                    Do you offer partnerships?
+                                </button>
+                            </h2>
+                            <div id="contactFaqThree" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                                <div class="accordion-body text-muted">Yes—select “Partnership” in the contact form and
+                                    share details. We’ll get back to you.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Map Section -->
     <section class="py-0">
         <iframe
@@ -144,16 +252,72 @@
     <!-- Footer -->
     <footer class="bg-white pt-5 pb-4 border-top">
         <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center gap-2 mb-4" href="#">
+                        <i class="bi bi-flower1 fs-3 text-primary-soft"></i>
+                        <span class="fw-bold text-dark fs-4">Serenify</span>
+                    </a>
+                    <p class="text-muted mb-4">Empowering you to find calm in chaos. Your safe space for mental clarity
+                        and emotional growth.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3">Company</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">About Us</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Careers</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Blog</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3">Product</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Features</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Pricing</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-decoration-none text-muted hover-primary">Testimonials</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Get in Touch</h5>
+                    <ul class="list-unstyled text-muted mb-4">
+                        <li class="mb-2 d-flex gap-2"><i class="bi bi-geo-alt mt-1"></i> 123 Wellness Ave, Serenity
+                            City, SC 90210</li>
+                        <li class="mb-2 d-flex gap-2"><i class="bi bi-envelope mt-1"></i> hello@serenify.com</li>
+                        <li class="mb-2 d-flex gap-2"><i class="bi bi-telephone mt-1"></i> +1 (555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start text-muted small">
                     &copy; 2026 Serenify. All rights reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="text-muted small text-decoration-none me-3">Privacy</a>
-                    <a href="#" class="text-muted small text-decoration-none">Terms</a>
+                    <a href="#" class="text-muted small text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted small text-decoration-none">Terms of Service</a>
                 </div>
             </div>
         </div>
+
+        <!-- Back to Top -->
+        <a href="#" id="back-to-top" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 d-none z-3"
+            style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <i class="bi bi-arrow-up"></i>
+        </a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

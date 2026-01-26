@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Serenify</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Serenify is your daily companion for mental peace. Reduce stress, sleep better, and feel balanced with our personalized wellness tools.">
+    <meta name="keywords" content="mental health, wellness, meditation, anxiety relief, mood tracker, self care">
+
+    <!-- Bootstrap 5 CSS -->
+    <link id="bootstrap-css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <i class="bi bi-flower1 fs-3 text-primary-soft"></i>
+                <span class="fw-bold text-dark">Serenify</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-medium" href="explore.html">Discover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="pages/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="pages/services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="pages/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <button class="btn btn-link nav-link p-0 text-dark" id="rtl-toggle" aria-label="Toggle RTL">
+                        <i class="bi bi-text-right fs-5"></i>
+                    </button>
+                    <button class="btn btn-link nav-link p-0 text-dark" id="theme-toggle">
+                        <i class="bi bi-moon-fill fs-5"></i>
+                    </button>
+                    <a href="dashboard/index.html" class="btn btn-outline-dark px-4">Dashboard</a>
+                    <a href="pages/login.html" class="btn btn-outline-primary px-4">Log In</a>
+                    <a href="pages/register.html" class="btn btn-primary px-4">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5" style="padding-top: 110px; background-color: var(--bg-light);">
+        <div class="container py-4">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6 animate-up">
+                    <span class="badge bg-primary-soft text-primary-soft mb-3 px-3 py-2 rounded-pill fw-medium">
+                        <i class="bi bi-compass me-1"></i> Discover
+                    </span>
+                    <h1 class="display-4 fw-bold mb-3">Find what you need, right now.</h1>
+                    <p class="lead text-muted mb-4">Explore calming tools by goal—stress relief, better sleep, focus, and
+                        emotional balance. Pick a path and start in minutes.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a href="#discover-categories" class="btn btn-primary btn-lg px-5 py-3">Browse Categories</a>
+                        <a href="#quick-start" class="btn btn-outline-dark btn-lg px-4 py-3">Quick Start</a>
+                    </div>
+                    <div class="mt-4 d-flex align-items-center gap-3 text-muted small">
+                        <span class="d-inline-flex align-items-center gap-2"><i class="bi bi-clock"></i> 2–10 min
+                            sessions</span>
+                        <span class="d-inline-flex align-items-center gap-2"><i class="bi bi-shield-check"></i>
+                            Private</span>
+                        <span class="d-inline-flex align-items-center gap-2"><i class="bi bi-stars"></i> Beginner
+                            friendly</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-up" style="animation-delay: 0.1s;">
+                    <div class="glass-card p-4 p-lg-5 border-0 shadow-sm">
+                        <h4 class="fw-bold mb-2">Today’s suggestion</h4>
+                        <p class="text-muted mb-4">A short sequence to reset your nervous system.</p>
+
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-center gap-3 bg-white p-3 rounded-4 shadow-sm">
+                                <div class="bg-primary-soft text-primary-soft rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 44px; height: 44px;">
+                                    <i class="bi bi-wind"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="fw-bold">Breathing Reset</div>
+                                    <div class="text-muted small">3 minutes</div>
+                                </div>
+                                <button class="btn btn-outline-dark px-3">Start</button>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 bg-white p-3 rounded-4 shadow-sm">
+                                <div class="bg-warning-subtle text-warning rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 44px; height: 44px;">
+                                    <i class="bi bi-moon-stars"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="fw-bold">Wind-down Routine</div>
+                                    <div class="text-muted small">7 minutes</div>
+                                </div>
+                                <button class="btn btn-outline-dark px-3">Start</button>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 bg-white p-3 rounded-4 shadow-sm">
+                                <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 44px; height: 44px;">
+                                    <i class="bi bi-journal-richtext"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="fw-bold">Mood Check-in</div>
+                                    <div class="text-muted small">2 minutes</div>
+                                </div>
+                                <button class="btn btn-outline-dark px-3">Start</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white" id="discover-categories">
+        <div class="container py-5">
+            <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4">
+                <div>
+                    <h2 class="fw-bold mb-1">Discover by goal</h2>
+                    <p class="text-muted mb-0">Choose a focus area and explore guided sessions and tools.</p>
+                </div>
+                <a href="pages/services.html" class="btn btn-outline-dark px-4">View All Services</a>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 animate-up">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100 hover-lift p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="bg-primary-soft text-primary-soft rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 54px; height: 54px;">
+                                    <i class="bi bi-wind fs-4"></i>
+                                </div>
+                                <span class="badge bg-primary-soft text-primary-soft rounded-pill">Stress</span>
+                            </div>
+                            <h5 class="fw-bold mb-2 text-dark">Calm in 5 minutes</h5>
+                            <p class="text-muted mb-0">Breathing and grounding techniques you can do anywhere.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3 animate-up" style="animation-delay: 0.05s;">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100 hover-lift p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="bg-warning-subtle text-warning rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 54px; height: 54px;">
+                                    <i class="bi bi-moon-stars fs-4"></i>
+                                </div>
+                                <span class="badge bg-warning-subtle text-warning rounded-pill">Sleep</span>
+                            </div>
+                            <h5 class="fw-bold mb-2 text-dark">Better nights</h5>
+                            <p class="text-muted mb-0">Wind-down routines and sleep-friendly soundscapes.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3 animate-up" style="animation-delay: 0.1s;">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100 hover-lift p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 54px; height: 54px;">
+                                    <i class="bi bi-bullseye fs-4"></i>
+                                </div>
+                                <span class="badge bg-success-subtle text-success rounded-pill">Focus</span>
+                            </div>
+                            <h5 class="fw-bold mb-2 text-dark">Get focused</h5>
+                            <p class="text-muted mb-0">Short sessions to reduce distraction and regain clarity.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3 animate-up" style="animation-delay: 0.15s;">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card border-0 shadow-sm h-100 hover-lift p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="bg-info-subtle text-info rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 54px; height: 54px;">
+                                    <i class="bi bi-heart-pulse fs-4"></i>
+                                </div>
+                                <span class="badge bg-info-subtle text-info rounded-pill">Balance</span>
+                            </div>
+                            <h5 class="fw-bold mb-2 text-dark">Emotional balance</h5>
+                            <p class="text-muted mb-0">Build resilience with reflection and gentle guidance.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="quick-start" style="background-color: var(--bg-light);">
+        <div class="container py-5">
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-5 animate-up">
+                    <div class="glass-card p-4 p-lg-5 border-0 shadow-sm h-100">
+                        <h3 class="fw-bold mb-3">Quick Start: Choose your mood</h3>
+                        <p class="text-muted mb-4">Pick what you’re feeling right now to get a suggested path.</p>
+                        <div class="d-grid gap-3">
+                            <button class="btn btn-outline-dark text-start px-4 py-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-medium">Anxious</span>
+                                    <span class="text-muted small">3-step calm</span>
+                                </div>
+                            </button>
+                            <button class="btn btn-outline-dark text-start px-4 py-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-medium">Overthinking</span>
+                                    <span class="text-muted small">Grounding</span>
+                                </div>
+                            </button>
+                            <button class="btn btn-outline-dark text-start px-4 py-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-medium">Low energy</span>
+                                    <span class="text-muted small">Gentle reset</span>
+                                </div>
+                            </button>
+                            <button class="btn btn-outline-dark text-start px-4 py-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-medium">Restless</span>
+                                    <span class="text-muted small">Sleep prep</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 animate-up" style="animation-delay: 0.1s;">
+                    <div class="card border-0 shadow-sm rounded-4 h-100">
+                        <div class="card-body p-4 p-lg-5">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+                                <h3 class="fw-bold mb-0">Curated guides</h3>
+                                <a href="pages/blog.html" class="text-decoration-none">Read more <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                            <p class="text-muted mb-4">Short reads that pair with a practice.</p>
+
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="p-4 bg-white border rounded-4 h-100">
+                                        <div class="d-flex align-items-center gap-3 mb-3">
+                                            <div class="bg-primary-soft text-primary-soft rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width: 44px; height: 44px;">
+                                                <i class="bi bi-lightning-charge"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-bold">Stress loop breaker</div>
+                                                <div class="text-muted small">A simple pattern to interrupt spirals.</div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-outline-dark w-100">Open guide</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-4 bg-white border rounded-4 h-100">
+                                        <div class="d-flex align-items-center gap-3 mb-3">
+                                            <div class="bg-warning-subtle text-warning rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width: 44px; height: 44px;">
+                                                <i class="bi bi-moon"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-bold">Sleep-friendly routine</div>
+                                                <div class="text-muted small">What to do 30 minutes before bed.</div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-outline-dark w-100">Open guide</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-4 bg-white border rounded-4 h-100">
+                                        <div class="d-flex align-items-center gap-3 mb-3">
+                                            <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width: 44px; height: 44px;">
+                                                <i class="bi bi-journal"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-bold">Journaling prompts</div>
+                                                <div class="text-muted small">Build clarity without pressure.</div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-outline-dark w-100">Open guide</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-4 bg-white border rounded-4 h-100">
+                                        <div class="d-flex align-items-center gap-3 mb-3">
+                                            <div class="bg-info-subtle text-info rounded-circle d-flex align-items-center justify-content-center"
+                                                style="width: 44px; height: 44px;">
+                                                <i class="bi bi-bullseye"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-bold">Focus rituals</div>
+                                                <div class="text-muted small">Small habits to start deep work.</div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-outline-dark w-100">Open guide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6 animate-up">
+                    <h2 class="fw-bold mb-3">Explore your progress</h2>
+                    <p class="text-muted mb-4">Track what helps you most. Build momentum with small wins that add up
+                        over time.</p>
+
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="p-4 border rounded-4 h-100">
+                                <div class="text-muted small mb-1">Weekly consistency</div>
+                                <div class="fw-bold fs-4">3–5 days</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-4 border rounded-4 h-100">
+                                <div class="text-muted small mb-1">Session length</div>
+                                <div class="fw-bold fs-4">2–10 min</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-4 border rounded-4 h-100">
+                                <div class="text-muted small mb-1">Stress relief</div>
+                                <div class="fw-bold fs-4">Breathing</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-4 border rounded-4 h-100">
+                                <div class="text-muted small mb-1">Sleep support</div>
+                                <div class="fw-bold fs-4">Wind-down</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate-up" style="animation-delay: 0.1s;">
+                    <div class="glass-card p-4 p-lg-5 border-0 shadow-sm">
+                        <h4 class="fw-bold mb-2">Make it a daily ritual</h4>
+                        <p class="text-muted mb-4">Set a gentle reminder and choose a time that fits your life.</p>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <button class="btn btn-outline-dark w-100 py-3">Morning</button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-outline-dark w-100 py-3">Evening</button>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3">Enable reminders</button>
+                            </div>
+                        </div>
+                        <div class="text-muted small mt-3">You can change this anytime.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7 animate-up">
+                    <h2 class="fw-bold mb-3">Build your plan (without overthinking)</h2>
+                    <p class="text-muted mb-4">A simple weekly structure that adapts to your schedule. Mix and match
+                        practices based on what works for you.</p>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-4 border rounded-4 h-100">
+                                <div class="fw-bold mb-1">Monday</div>
+                                <div class="text-muted small mb-3">Reset + intention</div>
+                                <div class="d-flex align-items-center gap-2 text-muted small">
+                                    <i class="bi bi-wind"></i> 5-min breathing
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-4 border rounded-4 h-100">
+                                <div class="fw-bold mb-1">Wednesday</div>
+                                <div class="text-muted small mb-3">Clarity + focus</div>
+                                <div class="d-flex align-items-center gap-2 text-muted small">
+                                    <i class="bi bi-bullseye"></i> 7-min focus session
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-4 border rounded-4 h-100">
+                                <div class="fw-bold mb-1">Friday</div>
+                                <div class="text-muted small mb-3">Reflect + release</div>
+                                <div class="d-flex align-items-center gap-2 text-muted small">
+                                    <i class="bi bi-journal"></i> 10-min journal
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-4 border rounded-4 h-100">
+                                <div class="fw-bold mb-1">Sunday</div>
+                                <div class="text-muted small mb-3">Sleep prep</div>
+                                <div class="d-flex align-items-center gap-2 text-muted small">
+                                    <i class="bi bi-moon-stars"></i> wind-down routine
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 animate-up" style="animation-delay: 0.1s;">
+                    <div class="glass-card p-4 p-lg-5 border-0 shadow-sm">
+                        <h4 class="fw-bold mb-2">Ready to personalize?</h4>
+                        <p class="text-muted mb-4">Create your profile to get recommendations that fit your routine.</p>
+                        <a href="pages/register.html" class="btn btn-primary w-100 py-3">Create Free Account</a>
+                        <a href="pages/pricing.html" class="btn btn-outline-dark w-100 py-3 mt-3">See pricing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: var(--bg-light);">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-2">Frequently asked questions</h2>
+                    <p class="text-muted mb-0">Quick answers before you start.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="accordion" id="discoverFaq">
+                        <div class="accordion-item border rounded-4 overflow-hidden mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-medium" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#discoverFaqOne">
+                                    Is Serenify suitable for beginners?
+                                </button>
+                            </h2>
+                            <div id="discoverFaqOne" class="accordion-collapse collapse show" data-bs-parent="#discoverFaq">
+                                <div class="accordion-body text-muted">Yes—start with 2–5 minute sessions and build up
+                                    at your own pace.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border rounded-4 overflow-hidden mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#discoverFaqTwo">
+                                    Do I need to meditate for a long time?
+                                </button>
+                            </h2>
+                            <div id="discoverFaqTwo" class="accordion-collapse collapse" data-bs-parent="#discoverFaq">
+                                <div class="accordion-body text-muted">No—consistency matters more than duration. Even a
+                                    few minutes can help.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#discoverFaqThree">
+                                    Is my data private?
+                                </button>
+                            </h2>
+                            <div id="discoverFaqThree" class="accordion-collapse collapse" data-bs-parent="#discoverFaq">
+                                <div class="accordion-body text-muted">Your wellness journey is personal. We keep it
+                                    private and secure.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-primary-soft text-center text-dark">
+        <div class="container py-4">
+            <h2 class="display-6 fw-bold mb-3">Discover your calm—one small step at a time</h2>
+            <p class="lead mb-4">Start with a quick session today, then build a routine that lasts.</p>
+            <a href="pages/register.html" class="btn btn-primary btn-lg px-5 py-3 shadow">Start free</a>
+        </div>
+    </section>
+    <footer class="bg-white pt-5 pb-4 border-top">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center gap-2 mb-4" href="#">
+                        <i class="bi bi-flower1 fs-3 text-primary-soft"></i>
+                        <span class="fw-bold text-dark fs-4">Serenify</span>
+                    </a>
+                    <p class="text-muted mb-4">Empowering you to find calm in chaos. Your safe space for mental clarity
+                        and emotional growth.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3">Company</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">About Us</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Careers</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Blog</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3">Product</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Features</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">Pricing</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-decoration-none text-muted hover-primary">Testimonials</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-primary">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Get in Touch</h5>
+                    <ul class="list-unstyled text-muted mb-4">
+                        <li class="mb-2 d-flex gap-2"><i class="bi bi-geo-alt mt-1"></i> 123 Wellness Ave, Serenity
+                            City, SC 90210</li>
+                        <li class="mb-2 d-flex gap-2"><i class="bi bi-envelope mt-1"></i> hello@serenify.com</li>
+                        <li class="mb-2 d-flex gap-2"><i class="bi bi-telephone mt-1"></i> +1 (555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start text-muted small">
+                    &copy; 2026 Serenify. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-muted small text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted small text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Top -->
+        <a href="#" id="back-to-top" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 d-none z-3"
+            style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

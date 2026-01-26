@@ -5,20 +5,23 @@
 
 :root {
     /* Color Palette - Mental Wellness (Pastels & Calming) */
-    --primary-color: #7C93C3;
+    --primary-color: #6F7F3A;
     /* Soft Serenity Blue */
-    --primary-hover: #556B9E;
-    --secondary-color: #9EB8D9;
+    --primary-hover: #55652B;
+    --secondary-color: #C9D8A6;
     /* Light Sky */
-    --accent-color: #A2D2FF;
+    --accent-color: #C9D8A6;
     /* Airy Blue */
-    --text-dark: #2C3E50;
+    --text-dark: #223018;
     /* Dark Slate for contrast */
-    --text-light: #6c757d;
-    --bg-light: #FDFBF7;
+    --text-light: #5F6B57;
+    --bg-light: #FBFCF7;
     /* Warm Off-white */
     --bg-white: #ffffff;
     --border-color: #e9ecef;
+    --bg-primary-soft: rgba(111, 127, 58, 0.14);
+    --hero-gradient-start: #FBFCF7;
+    --hero-gradient-end: #E8F0D7;
 
     /* Semantic Colors */
     --success-color: #A7D7C5;
@@ -35,14 +38,17 @@
 }
 
 [data-bs-theme="dark"] {
-    --primary-color: #8EACDB;
-    --primary-hover: #A2D2FF;
-    --text-dark: #f8f9fa;
-    --text-light: #ADB5BD;
-    --bg-light: #1A1D21;
-    --bg-white: #212529;
+    --primary-color: #8DAA3F;
+    --primary-hover: #A9C65A;
+    --text-dark: #F3F6EE;
+    --text-light: #B7C1AE;
+    --bg-light: #0F1410;
+    --bg-white: #161C15;
     --border-color: #343a40;
     --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    --bg-primary-soft: rgba(141, 170, 63, 0.18);
+    --hero-gradient-start: #0F1410;
+    --hero-gradient-end: #172115;
 }
 
 body {
@@ -50,6 +56,26 @@ body {
     background-color: var(--bg-light);
     color: var(--text-dark);
     overflow-x: hidden;
+}
+
+html[data-bs-theme] .bg-white {
+    background-color: var(--bg-white) !important;
+}
+
+html[data-bs-theme] .bg-light {
+    background-color: var(--bg-light) !important;
+}
+
+html[data-bs-theme] .text-dark {
+    color: var(--text-dark) !important;
+}
+
+html[data-bs-theme] .text-muted {
+    color: var(--text-light) !important;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--hero-gradient-start) 0%, var(--hero-gradient-end) 100%);
 }
 
 /* Typography */
@@ -69,6 +95,21 @@ p {
 }
 
 /* Buttons */
+.btn:not(.btn-link) {
+    border-radius: 50px;
+}
+
+html[data-bs-theme] .btn-outline-dark {
+    color: var(--text-dark);
+    border-color: var(--text-dark);
+}
+
+html[data-bs-theme] .btn-outline-dark:hover {
+    background-color: var(--text-dark);
+    border-color: var(--text-dark);
+    color: var(--bg-light);
+}
+
 .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
@@ -135,7 +176,7 @@ p {
 }
 
 .bg-primary-soft {
-    background-color: rgba(124, 147, 195, 0.1);
+    background-color: var(--bg-primary-soft);
 }
 
 /* =========================================
