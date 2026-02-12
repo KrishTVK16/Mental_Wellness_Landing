@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#6F7F3A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Center Circle -->
+  <circle cx="50" cy="50" r="12" />
+  
+  <!-- Petals -->
+  <g>
+    <!-- Top -->
+    <path d="M50 34 C50 34 35 15 50 5 C65 15 50 34 50 34" />
+    <!-- Top Right -->
+    <path d="M61.3 38.7 C61.3 38.7 75 25 82 32 C89 39 75 50 61.3 38.7" transform="rotate(45 50 50)"/>
+    <!-- Right -->
+    <path d="M66 50 C66 50 85 35 95 50 C85 65 66 50 66 50" />
+    <!-- Bottom Right -->
+    <path d="M61.3 61.3 C61.3 61.3 75 75 82 68 C89 61 75 50 61.3 61.3" transform="rotate(135 50 50)"/>
+    <!-- Bottom -->
+    <path d="M50 66 C50 66 35 85 50 95 C65 85 50 66 50 66" />
+    <!-- Bottom Left -->
+    <path d="M38.7 61.3 C38.7 61.3 25 75 18 68 C11 61 25 50 38.7 61.3" transform="rotate(225 50 50)"/>
+    <!-- Left -->
+    <path d="M34 50 C34 50 15 35 5 50 C15 65 34 50 34 50" />
+    <!-- Top Left -->
+    <path d="M38.7 38.7 C38.7 38.7 25 25 18 32 C11 39 25 50 38.7 38.7" transform="rotate(315 50 50)"/>
+  </g>
+</svg>

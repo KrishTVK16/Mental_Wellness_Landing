@@ -3,12 +3,14 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // Theme Toggle Logic
     const themeToggle = document.getElementById('theme-toggle');
+    const themeToggleMobile = document.getElementById('theme-toggle-mobile');
     const rtlToggle = document.getElementById('rtl-toggle');
     const htmlElement = document.documentElement;
     const icon = themeToggle?.querySelector('i');
+    const iconMobile = themeToggleMobile?.querySelector('i');
     const rtlIcon = rtlToggle?.querySelector('i');
     const bootstrapCssLink = document.getElementById('bootstrap-css');
 
@@ -19,11 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentDir = localStorage.getItem('dir') || 'ltr';
     setDir(currentDir);
 
-    if(themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            const newTheme = htmlElement.getAttribute('data-bs-theme') === 'light' ? 'dark' : 'light';
-            setTheme(newTheme);
-        });
+    const toggleTheme = () => {
+        const newTheme = htmlElement.getAttribute('data-bs-theme') === 'light' ? 'dark' : 'light';
+        setTheme(newTheme);
+    };
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleTheme);
+    }
+
+    if (themeToggleMobile) {
+        themeToggleMobile.addEventListener('click', toggleTheme);
     }
 
     if (rtlToggle) {
@@ -36,15 +44,24 @@ document.addEventListener('DOMContentLoaded', () => {
     function setTheme(theme) {
         htmlElement.setAttribute('data-bs-theme', theme);
         localStorage.setItem('theme', theme);
-        
+
         // Update Icon (if using FontAwesome or similar)
-        if(icon) {
-            if(theme === 'dark') {
+        if (icon) {
+            if (theme === 'dark') {
                 icon.classList.remove('bi-moon-fill');
                 icon.classList.add('bi-sun-fill');
             } else {
                 icon.classList.remove('bi-sun-fill');
                 icon.classList.add('bi-moon-fill');
+            }
+        }
+        if (iconMobile) {
+            if (theme === 'dark') {
+                iconMobile.classList.remove('bi-moon-fill');
+                iconMobile.classList.add('bi-sun-fill');
+            } else {
+                iconMobile.classList.remove('bi-sun-fill');
+                iconMobile.classList.add('bi-moon-fill');
             }
         }
     }
@@ -72,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Scroll to Top
     const backToTop = document.getElementById('back-to-top');
-    if(backToTop) {
+    if (backToTop) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
                 backToTop.classList.remove('d-none');
@@ -80,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 backToTop.classList.add('d-none');
             }
         });
-        
+
         backToTop.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -90,6 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize Tooltips/Popovers if needed (Bootstrap)
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl)
+        return new bootstrap.Tooltip(tooltipTriggerEl)
     })
 });

@@ -10,9 +10,11 @@
     <meta name="description"
         content="Serenify is your daily companion for mental peace. Reduce stress, sleep better, and feel balanced with our personalized wellness tools.">
     <meta name="keywords" content="mental health, wellness, meditation, anxiety relief, mood tracker, self care">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
     <!-- Bootstrap 5 CSS -->
-    <link id="bootstrap-css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link id="bootstrap-css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Google Fonts -->
@@ -31,7 +33,7 @@
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
                 <i class="bi bi-flower1 fs-3 text-primary-soft"></i>
-                <span class="fw-bold text-dark">Serenify</span>
+                <span class="fw-bold text-dark fs-4">Serenify</span>
             </a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -60,11 +62,8 @@
                     </li>
                 </ul>
 
-                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
-                    <button class="btn btn-link nav-link p-0 text-dark" id="rtl-toggle" aria-label="Toggle RTL">
-                        <i class="bi bi-text-right fs-5"></i>
-                    </button>
-                    <button class="btn btn-link nav-link p-0 text-dark" id="theme-toggle">
+                <div class="d-flex flex-column flex-lg-row align-items-center gap-3 mt-3 mt-lg-0">
+                    <button class="btn btn-link nav-link p-0 text-dark d-none d-lg-block" id="theme-toggle">
                         <i class="bi bi-moon-fill fs-5"></i>
                     </button>
                     <a href="dashboard/index.html" class="btn btn-outline-dark px-4">Dashboard</a>
@@ -76,7 +75,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="py-5" style="padding-top: 110px; background-color: var(--bg-light);">
+    <section class="py-5" style="padding-top: 120px; background-color: var(--bg-light);">
         <div class="container py-4">
             <div class="row align-items-center g-4">
                 <div class="col-lg-6 animate-up">
@@ -84,7 +83,8 @@
                         <i class="bi bi-compass me-1"></i> Discover
                     </span>
                     <h1 class="display-4 fw-bold mb-3">Find what you need, right now.</h1>
-                    <p class="lead text-muted mb-4">Explore calming tools by goal—stress relief, better sleep, focus, and
+                    <p class="lead text-muted mb-4">Explore calming tools by goal—stress relief, better sleep, focus,
+                        and
                         emotional balance. Pick a path and start in minutes.</p>
                     <div class="d-flex flex-column flex-sm-row gap-3">
                         <a href="#discover-categories" class="btn btn-primary btn-lg px-5 py-3">Browse Categories</a>
@@ -279,7 +279,8 @@
                                             </div>
                                             <div>
                                                 <div class="fw-bold">Stress loop breaker</div>
-                                                <div class="text-muted small">A simple pattern to interrupt spirals.</div>
+                                                <div class="text-muted small">A simple pattern to interrupt spirals.
+                                                </div>
                                             </div>
                                         </div>
                                         <button class="btn btn-outline-dark w-100">Open guide</button>
@@ -475,15 +476,16 @@
                                     Is Serenify suitable for beginners?
                                 </button>
                             </h2>
-                            <div id="discoverFaqOne" class="accordion-collapse collapse show" data-bs-parent="#discoverFaq">
+                            <div id="discoverFaqOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#discoverFaq">
                                 <div class="accordion-body text-muted">Yes—start with 2–5 minute sessions and build up
                                     at your own pace.</div>
                             </div>
                         </div>
                         <div class="accordion-item border rounded-4 overflow-hidden mb-3">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#discoverFaqTwo">
+                                <button class="accordion-button collapsed fw-medium" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#discoverFaqTwo">
                                     Do I need to meditate for a long time?
                                 </button>
                             </h2>
@@ -494,12 +496,13 @@
                         </div>
                         <div class="accordion-item border rounded-4 overflow-hidden">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#discoverFaqThree">
+                                <button class="accordion-button collapsed fw-medium" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#discoverFaqThree">
                                     Is my data private?
                                 </button>
                             </h2>
-                            <div id="discoverFaqThree" class="accordion-collapse collapse" data-bs-parent="#discoverFaq">
+                            <div id="discoverFaqThree" class="accordion-collapse collapse"
+                                data-bs-parent="#discoverFaq">
                                 <div class="accordion-body text-muted">Your wellness journey is personal. We keep it
                                     private and secure.</div>
                             </div>
@@ -527,11 +530,11 @@
                     </a>
                     <p class="text-muted mb-4">Empowering you to find calm in chaos. Your safe space for mental clarity
                         and emotional growth.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="btn btn-light rounded-circle p-2"><i class="bi bi-linkedin"></i></a>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-6">
