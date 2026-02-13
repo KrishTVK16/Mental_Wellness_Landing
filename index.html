@@ -36,9 +36,15 @@
                 <span class="fw-bold text-dark fs-4">Serenify</span>
             </a>
 
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn btn-link nav-link p-0 text-dark d-lg-none" id="theme-toggle-mobile">
+                    <i class="bi bi-moon-fill fs-5"></i>
+                </button>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
@@ -90,11 +96,12 @@
                         Reduce stress, sleep better, and find your balance. Join over 2 million users on a journey to
                         emotional well-being with personalized tools and insights.
                     </p>
-                    <div class="d-flex flex-column flex-sm-row gap-3">
-                        <a href="#" class="btn btn-primary btn-lg px-5 py-3">Start Free Trial</a>
+                    <div
+                        class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start align-items-lg-start gap-3">
+                        <a href="pages/register.html" class="btn btn-primary px-3 py-2">Start Free Trial</a>
                         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
-                            class="btn btn-outline-dark btn-lg px-4 py-3 d-flex align-items-center justify-content-center gap-2">
-                            <i class="bi bi-play-circle fs-4"></i> Watch Demo
+                            class="btn btn-outline-dark px-3 py-2 d-flex align-items-center justify-content-center gap-2">
+                            <i class="bi bi-play-circle fs-5"></i> Watch Demo
                         </a>
                     </div>
                     <div class="mt-5 d-flex align-items-center gap-4">
@@ -218,39 +225,33 @@
 
             <div class="row g-4">
                 <div class="col-md-4 animate-up">
-                    <div class="p-4 bg-white border rounded-4 h-100">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="bg-primary-soft text-primary-soft rounded-circle d-flex align-items-center justify-content-center"
-                                style="width: 52px; height: 52px;">
-                                <i class="bi bi-emoji-smile fs-4"></i>
-                            </div>
-                            <div class="fw-bold">1. Check in</div>
+                    <div class="p-4 bg-white border rounded-4 h-100 d-flex flex-column align-items-center text-center">
+                        <div class="bg-primary-soft text-primary-soft rounded-circle d-flex align-items-center justify-content-center mb-3"
+                            style="width: 52px; height: 52px;">
+                            <i class="bi bi-emoji-smile fs-4"></i>
                         </div>
+                        <div class="fw-bold mb-3">1. Check in</div>
                         <p class="text-muted mb-0">Tell us how you feel in seconds to get the right suggestion.</p>
                     </div>
                 </div>
                 <div class="col-md-4 animate-up" style="animation-delay: 0.1s;">
-                    <div class="p-4 bg-white border rounded-4 h-100">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="bg-warning-subtle text-warning rounded-circle d-flex align-items-center justify-content-center"
-                                style="width: 52px; height: 52px;">
-                                <i class="bi bi-lightning-charge fs-4"></i>
-                            </div>
-                            <div class="fw-bold">2. Practice</div>
+                    <div class="p-4 bg-white border rounded-4 h-100 d-flex flex-column align-items-center text-center">
+                        <div class="bg-warning-subtle text-warning rounded-circle d-flex align-items-center justify-content-center mb-3"
+                            style="width: 52px; height: 52px;">
+                            <i class="bi bi-lightning-charge fs-4"></i>
                         </div>
+                        <div class="fw-bold mb-3">2. Practice</div>
                         <p class="text-muted mb-0">Choose a 2–10 minute session—breathing, journaling, or sleep prep.
                         </p>
                     </div>
                 </div>
                 <div class="col-md-4 animate-up" style="animation-delay: 0.2s;">
-                    <div class="p-4 bg-white border rounded-4 h-100">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center"
-                                style="width: 52px; height: 52px;">
-                                <i class="bi bi-graph-up fs-4"></i>
-                            </div>
-                            <div class="fw-bold">3. Improve</div>
+                    <div class="p-4 bg-white border rounded-4 h-100 d-flex flex-column align-items-center text-center">
+                        <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center mb-3"
+                            style="width: 52px; height: 52px;">
+                            <i class="bi bi-graph-up fs-4"></i>
                         </div>
+                        <div class="fw-bold mb-3">3. Improve</div>
                         <p class="text-muted mb-0">Track patterns and build habits that support long-term balance.</p>
                     </div>
                 </div>
@@ -354,18 +355,18 @@
                         <h4 class="fw-bold mb-2">Take a 60-second self check</h4>
                         <p class="text-muted mb-4">Answer a few questions and get a recommended starting plan.</p>
                         <div class="row g-3">
-                            <div class="col-12">
-                                <button class="btn btn-outline-dark w-100 py-3">Start assessment</button>
+                            <div class="col-12 col-md-auto">
+                                <a href="pages/services.html" class="btn btn-outline-dark w-100 w-md-auto">Start
+                                    assessment</a>
                             </div>
-                            <div class="col-12">
-                                <a href="pages/register.html" class="btn btn-primary w-100 py-3">Create account</a>
+                            <div class="col-12 col-md-auto">
+                                <a href="pages/register.html" class="btn btn-primary w-100 w-md-auto">Create account</a>
                             </div>
                         </div>
                         <div class="text-muted small mt-3">No credit card required.</div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Testimonials / Trust Section -->
@@ -459,7 +460,7 @@
         <div class="container py-4">
             <h2 class="display-5 fw-bold mb-4">Start your journey to calm today</h2>
             <p class="lead mb-5">Join for free. No credit card required.</p>
-            <a href="pages/register.html" class="btn btn-primary btn-lg px-5 py-3 shadow">Begin with 5 free minutes</a>
+            <a href="pages/register.html" class="btn btn-primary btn-lg shadow">Begin with 5 free minutes</a>
         </div>
     </section>
     <footer class="bg-white pt-5 pb-4 border-top">

@@ -18,15 +18,14 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-5 col-lg-4">
-                <div class="d-flex justify-content-center mb-4">
-                    <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
-                        <i class="bi bi-flower1 fs-1 text-primary-soft"></i>
-                        <span class="fw-bold text-dark fs-3">Serenify</span>
-                    </a>
-                </div>
+
 
                 <div class="glass-card p-4 p-md-5 border-0 shadow-sm">
                     <div class="text-center mb-4">
+                        <a class="navbar-brand d-inline-flex align-items-center gap-2 mb-3" href="../index.html">
+                            <i class="bi bi-flower1 fs-1 text-primary-soft"></i>
+                            <span class="fw-bold text-dark fs-3">Serenify</span>
+                        </a>
                         <h4 class="fw-bold">Welcome Back</h4>
                         <p class="text-muted small">Please enter your details to sign in</p>
                     </div>
@@ -46,7 +45,12 @@
                             <div class="input-group">
                                 <span class="input-group-text bg-white border-end-0"><i
                                         class="bi bi-lock text-muted"></i></span>
-                                <input type="password" class="form-control border-start-0 ps-0" placeholder="••••••••">
+                                <input type="password" class="form-control border-start-0 border-end-0 ps-0"
+                                    placeholder="••••••••" id="passwordInput">
+                                <span class="input-group-text bg-white border-start-0 cursor-pointer"
+                                    onclick="togglePassword('passwordInput', this)">
+                                    <i class="bi bi-eye-slash text-muted"></i>
+                                </span>
                             </div>
                         </div>
                         <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
@@ -58,10 +62,26 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary w-100 py-2 mb-3 shadow-sm">Log In</button>
-                        <button type="button"
-                            class="btn btn-light w-100 py-2 border gap-2 d-flex align-items-center justify-content-center">
-                            <i class="bi bi-google"></i> Sign in with Google
-                        </button>
+
+                        <div class="text-center position-relative mb-3">
+                            <hr class="text-muted opacity-25">
+                            <span
+                                class="position-absolute top-50 start-50 translate-middle bg-white px-2 text-muted small">Or
+                                continue with</span>
+                        </div>
+
+                        <div class="d-flex gap-2 justify-content-center">
+                            <button type="button"
+                                class="btn btn-outline-light border w-100 d-flex align-items-center justify-content-center py-2 text-dark">
+                                <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="20"
+                                    height="20">
+                            </button>
+                            <button type="button"
+                                class="btn btn-outline-light border w-100 d-flex align-items-center justify-content-center py-2 text-dark">
+                                <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" alt="Facebook"
+                                    width="20" height="20">
+                            </button>
+                        </div>
                     </form>
 
                     <div class="text-center mt-4">
@@ -70,10 +90,7 @@
                     </div>
                 </div>
 
-                <div class="text-center mt-4">
-                    <a href="../index.html" class="text-muted small text-decoration-none"><i
-                            class="bi bi-arrow-left me-1"></i> Back to Home</a>
-                </div>
+
             </div>
         </div>
     </div>
@@ -86,6 +103,21 @@
     </button>
 
     <script src="../assets/js/main.js"></script>
+    <script>
+        function togglePassword(inputId, iconSpan) {
+            const input = document.getElementById(inputId);
+            const icon = iconSpan.querySelector('i');
+            if (input.type === "password") {
+                input.type = "text";
+                icon.classList.remove('bi-eye-slash');
+                icon.classList.add('bi-eye');
+            } else {
+                input.type = "password";
+                icon.classList.remove('bi-eye');
+                icon.classList.add('bi-eye-slash');
+            }
+        }
+    </script>
 </body>
 
 </html>

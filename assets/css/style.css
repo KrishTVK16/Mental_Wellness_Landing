@@ -296,6 +296,35 @@ html[data-bs-theme] .btn-outline-dark:hover {
     border-radius: 12px;
     display: flex;
     align-items: center;
+
     justify-content: center;
     font-size: 1.5rem;
+}
+
+/* Responsive Width Utility */
+@media (min-width: 768px) {
+    .w-md-auto {
+        width: auto !important;
+    }
+}
+
+/* Enforce Balanced Button Padding */
+.btn {
+    padding: 10px 24px !important;
+    /* Override potential utility classes */
+    min-height: 48px;
+    /* Balanced height */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-lg {
+    padding: 12px 32px !important;
+    min-height: 56px;
+}
+
+.btn-sm {
+    padding: 8px 16px !important;
+    min-height: 36px;
 }

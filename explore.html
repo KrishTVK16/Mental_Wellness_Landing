@@ -36,9 +36,15 @@
                 <span class="fw-bold text-dark fs-4">Serenify</span>
             </a>
 
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn btn-link nav-link p-0 text-dark d-lg-none" id="theme-toggle-mobile">
+                    <i class="bi bi-moon-fill fs-5"></i>
+                </button>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
@@ -75,7 +81,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="py-5" style="padding-top: 120px; background-color: var(--bg-light);">
+    <section class="pb-5" style="padding-top: 120px; background-color: var(--bg-light);">
         <div class="container py-4">
             <div class="row align-items-center g-4">
                 <div class="col-lg-6 animate-up">
@@ -86,9 +92,10 @@
                     <p class="lead text-muted mb-4">Explore calming tools by goal—stress relief, better sleep, focus,
                         and
                         emotional balance. Pick a path and start in minutes.</p>
-                    <div class="d-flex flex-column flex-sm-row gap-3">
-                        <a href="#discover-categories" class="btn btn-primary btn-lg px-5 py-3">Browse Categories</a>
-                        <a href="#quick-start" class="btn btn-outline-dark btn-lg px-4 py-3">Quick Start</a>
+                    <div
+                        class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start align-items-lg-start gap-3">
+                        <a href="#discover-categories" class="btn btn-primary px-3 py-2">Browse Categories</a>
+                        <a href="#quick-start" class="btn btn-outline-dark px-3 py-2">Quick Start</a>
                     </div>
                     <div class="mt-4 d-flex align-items-center gap-3 text-muted small">
                         <span class="d-inline-flex align-items-center gap-2"><i class="bi bi-clock"></i> 2–10 min
@@ -114,7 +121,7 @@
                                     <div class="fw-bold">Breathing Reset</div>
                                     <div class="text-muted small">3 minutes</div>
                                 </div>
-                                <button class="btn btn-outline-dark px-3">Start</button>
+                                <a href="pages/service-details.html" class="btn btn-outline-dark px-3">Start</a>
                             </div>
                             <div class="d-flex align-items-center gap-3 bg-white p-3 rounded-4 shadow-sm">
                                 <div class="bg-warning-subtle text-warning rounded-circle d-flex align-items-center justify-content-center"
@@ -125,7 +132,7 @@
                                     <div class="fw-bold">Wind-down Routine</div>
                                     <div class="text-muted small">7 minutes</div>
                                 </div>
-                                <button class="btn btn-outline-dark px-3">Start</button>
+                                <a href="pages/service-details.html" class="btn btn-outline-dark px-3">Start</a>
                             </div>
                             <div class="d-flex align-items-center gap-3 bg-white p-3 rounded-4 shadow-sm">
                                 <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center"
@@ -136,7 +143,7 @@
                                     <div class="fw-bold">Mood Check-in</div>
                                     <div class="text-muted small">2 minutes</div>
                                 </div>
-                                <button class="btn btn-outline-dark px-3">Start</button>
+                                <a href="pages/service-details.html" class="btn btn-outline-dark px-3">Start</a>
                             </div>
                         </div>
                     </div>
@@ -231,30 +238,26 @@
                         <h3 class="fw-bold mb-3">Quick Start: Choose your mood</h3>
                         <p class="text-muted mb-4">Pick what you’re feeling right now to get a suggested path.</p>
                         <div class="d-grid gap-3">
-                            <button class="btn btn-outline-dark text-start px-4 py-3">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="fw-medium">Anxious</span>
-                                    <span class="text-muted small">3-step calm</span>
-                                </div>
-                            </button>
-                            <button class="btn btn-outline-dark text-start px-4 py-3">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="fw-medium">Overthinking</span>
-                                    <span class="text-muted small">Grounding</span>
-                                </div>
-                            </button>
-                            <button class="btn btn-outline-dark text-start px-4 py-3">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="fw-medium">Low energy</span>
-                                    <span class="text-muted small">Gentle reset</span>
-                                </div>
-                            </button>
-                            <button class="btn btn-outline-dark text-start px-4 py-3">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="fw-medium">Restless</span>
-                                    <span class="text-muted small">Sleep prep</span>
-                                </div>
-                            </button>
+                            <a href="pages/services.html"
+                                class="btn btn-outline-dark px-4 py-3 text-decoration-none h-100 d-flex flex-column align-items-center justify-content-center text-center">
+                                <span class="fw-medium fs-5 mb-1">Anxious</span>
+                                <span class="text-muted small">3-step calm</span>
+                            </a>
+                            <a href="pages/services.html"
+                                class="btn btn-outline-dark px-4 py-3 text-decoration-none h-100 d-flex flex-column align-items-center justify-content-center text-center">
+                                <span class="fw-medium fs-5 mb-1">Overthinking</span>
+                                <span class="text-muted small">Grounding</span>
+                            </a>
+                            <a href="pages/services.html"
+                                class="btn btn-outline-dark px-4 py-3 text-decoration-none h-100 d-flex flex-column align-items-center justify-content-center text-center">
+                                <span class="fw-medium fs-5 mb-1">Low energy</span>
+                                <span class="text-muted small">Gentle reset</span>
+                            </a>
+                            <a href="pages/services.html"
+                                class="btn btn-outline-dark px-4 py-3 text-decoration-none h-100 d-flex flex-column align-items-center justify-content-center text-center">
+                                <span class="fw-medium fs-5 mb-1">Restless</span>
+                                <span class="text-muted small">Sleep prep</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -283,7 +286,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <button class="btn btn-outline-dark w-100">Open guide</button>
+                                        <a href="pages/blog.html" class="btn btn-outline-dark w-100">Open guide</a>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -298,7 +301,7 @@
                                                 <div class="text-muted small">What to do 30 minutes before bed.</div>
                                             </div>
                                         </div>
-                                        <button class="btn btn-outline-dark w-100">Open guide</button>
+                                        <a href="pages/blog.html" class="btn btn-outline-dark w-100">Open guide</a>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -313,7 +316,7 @@
                                                 <div class="text-muted small">Build clarity without pressure.</div>
                                             </div>
                                         </div>
-                                        <button class="btn btn-outline-dark w-100">Open guide</button>
+                                        <a href="pages/blog.html" class="btn btn-outline-dark w-100">Open guide</a>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -328,7 +331,7 @@
                                                 <div class="text-muted small">Small habits to start deep work.</div>
                                             </div>
                                         </div>
-                                        <button class="btn btn-outline-dark w-100">Open guide</button>
+                                        <a href="pages/blog.html" class="btn btn-outline-dark w-100">Open guide</a>
                                     </div>
                                 </div>
                             </div>
@@ -381,13 +384,14 @@
                         <p class="text-muted mb-4">Set a gentle reminder and choose a time that fits your life.</p>
                         <div class="row g-3">
                             <div class="col-6">
-                                <button class="btn btn-outline-dark w-100 py-3">Morning</button>
+                                <a href="pages/login.html" class="btn btn-outline-dark w-100 py-3 w-md-auto">Morning</a>
                             </div>
                             <div class="col-6">
-                                <button class="btn btn-outline-dark w-100 py-3">Evening</button>
+                                <a href="pages/login.html" class="btn btn-outline-dark w-100 py-3 w-md-auto">Evening</a>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3">Enable reminders</button>
+                                <a href="pages/login.html" class="btn btn-primary w-100 py-3 w-md-auto">Enable
+                                    reminders</a>
                             </div>
                         </div>
                         <div class="text-muted small mt-3">You can change this anytime.</div>
@@ -449,8 +453,8 @@
                     <div class="glass-card p-4 p-lg-5 border-0 shadow-sm">
                         <h4 class="fw-bold mb-2">Ready to personalize?</h4>
                         <p class="text-muted mb-4">Create your profile to get recommendations that fit your routine.</p>
-                        <a href="pages/register.html" class="btn btn-primary w-100 py-3">Create Free Account</a>
-                        <a href="pages/pricing.html" class="btn btn-outline-dark w-100 py-3 mt-3">See pricing</a>
+                        <a href="pages/register.html" class="btn btn-primary w-100 w-md-auto">Create Free Account</a>
+                        <a href="pages/pricing.html" class="btn btn-outline-dark w-100 w-md-auto mt-3">See pricing</a>
                     </div>
                 </div>
             </div>
@@ -517,7 +521,7 @@
         <div class="container py-4">
             <h2 class="display-6 fw-bold mb-3">Discover your calm—one small step at a time</h2>
             <p class="lead mb-4">Start with a quick session today, then build a routine that lasts.</p>
-            <a href="pages/register.html" class="btn btn-primary btn-lg px-5 py-3 shadow">Start free</a>
+            <a href="pages/register.html" class="btn btn-primary btn-lg shadow">Start free</a>
         </div>
     </section>
     <footer class="bg-white pt-5 pb-4 border-top">
