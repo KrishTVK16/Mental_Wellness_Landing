@@ -328,3 +328,25 @@ html[data-bs-theme] .btn-outline-dark:hover {
     padding: 8px 16px !important;
     min-height: 36px;
 }
+
+/* Auth Pages */
+.auth-container {
+    width: 380px;
+    max-width: 100%;
+}
+
+@media (max-width: 400px) {
+    .auth-container {
+        width: 100%;
+    }
+}
+
+.justify-content-xs-center {
+    justify-content: center !important;
+}
+
+@media (min-width: 576px) {
+    .justify-content-xs-center {
+        justify-content: space-between !important;
+    }
+}
